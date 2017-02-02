@@ -7,17 +7,12 @@ public class App
 {
 	public void bar() {
 		
-        //FIXME: error PMD de variable local no usada
-		/* Unused local variable. */
-		String bar = "";
+		String bar = "";		
 
-        //FIXME: error PMD de los bloques try y catch vacios
-		
-
-        if (bar == "foo") bar = "bar";
-
-        //FIXME: error PMD del if
-        
+        if (bar == "foo"){
+        	bar = "bar";
+        }
+    } 
 
     //TODO:metodo para controlar el mundo
 	
