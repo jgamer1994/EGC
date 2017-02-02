@@ -1,9 +1,8 @@
-package org.egc;
+package org.alemurrod;
 
-/**
- * Hello world!
- *
- */
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class App 
 {
 	public void bar() {
@@ -33,6 +32,11 @@ public class App
     //TODO:metodo para controlar el mundo
 	
     public static void main( String[] args ) {
+
+    	/* Uso de la libreria SLF4J */
+        Logger slf4jLogger = LoggerFactory.getLogger(App.class);
+        slf4jLogger.info("Hello world");
+
         System.out.println("alemurrod");
     }
 }
