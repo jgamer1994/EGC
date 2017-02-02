@@ -94,6 +94,9 @@
         <artifactId>taglist-maven-plugin</artifactId>
         <version>2.4</version>
         <configuration>
+          <goals>
+              <goal>site</goal>
+          </goals>
           <tagListOptions>
             <tagClasses>
               <tagClass>
