@@ -34,7 +34,35 @@
       </plugin>
     </plugins>
   </build>
-  
+
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>taglist-maven-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <tagListOptions>
+            <tagClasses>
+              <tagClass>
+                <displayName>Todo Work</displayName>
+                <tags>
+                  <tag>
+                    <matchString>TODO</matchString>
+                    <matchType>ignoreCase</matchType>
+                  </tag>
+                  <tag>
+                    <matchString>FIXME</matchString>
+                    <matchType>exact</matchType>
+                  </tag>
+                </tags>
+              </tagClass>
+            </tagClasses>
+          </tagListOptions>
+        </configuration>
+      </plugin>
+    </plugins>
+  </reporting>  
   
   <distributionManagement>
     <repository>
